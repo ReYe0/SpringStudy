@@ -22,8 +22,9 @@
     <description>父工程顶层依赖</description>
 
     <modules>
-        <module>01.start-spring-boot</module>
-        <module>02.spring-boot-config</module>
+        <module>_01.start-spring-boot</module>
+        <module>_02.spring-boot-config</module>
+        <module>_03.spring-boot-mybatis</module>
     </modules>
 
     <properties>
@@ -32,6 +33,7 @@
         <!--父模块properties属性能够被子模块继承和使用，可用于统一版本管理-->
         <bootWeb.version>2.7.0</bootWeb.version>
         <bootTest.version>2.7.0</bootTest.version>
+        <lombok.version>1.18.22</lombok.version>
     </properties>
     <!--
 dependencyManagement标签作用：
@@ -47,6 +49,14 @@ dependencies标签的使用：
 -->
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
