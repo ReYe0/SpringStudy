@@ -3,18 +3,89 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version>
+<!--        <type>pom</type>-->
+    </parent>
+    <!--顶层依赖，作为整个项目来引用-->
+    <!--组织名-->
     <groupId>org.example</groupId>
+    <!--模块名，唯一标识-->
     <artifactId>SpringStudy</artifactId>
+    <!--父工程打包方式必须是pom形式-->
     <packaging>pom</packaging>
+    <!--项目版本-->
     <version>1.0-SNAPSHOT</version>
+    <name>StringStudy</name>
+    <description>父工程顶层依赖</description>
+
     <modules>
-        <module>start-spring-boot</module>
+        <module>01.start-spring-boot</module>
+        <module>02.spring-boot-config</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <!--父模块properties属性能够被子模块继承和使用，可用于统一版本管理-->
+        <bootWeb.version>2.7.0</bootWeb.version>
+        <bootTest.version>2.7.0</bootTest.version>
     </properties>
+    <!--
+dependencyManagement标签作用：
+    1.用在项目顶层的pom文件中，统一管理项目的依赖和版本
+    2.该标签不能用在子项目的pom文件中，因为在该标签里面的依赖只是声明依赖，并不实现引入
+    3.这个标签里面的依赖不会主动引入到子项目中，子项目要引用这里面的依赖就需要显式声明，但是可以不用指定版本，
+      因为version和scope都读取自顶层pom
+    4.如果某个子项目自定义版本，只需要在dependencies中声明即可
+
+dependencies标签的使用：
+   父项目中如果不使用dependencyManagement标签，直接使用dependencies标签，
+   那么所有在dependencies里的依赖都会自动引入，并默认被所有的子项目继承
+-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${bootWeb.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${bootTest.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!--顶层pom依赖中已经引用了spring-boot-starter-parent，因此不要在这里面重复引用-->
+            <!--       <dependency>-->
+            <!--            <groupId>org.springframework.boot</groupId>-->
+            <!--            <artifactId>spring-boot-starter-web</artifactId>-->
+            <!--        </dependency>-->
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <!--统一插件管理，这些插件在子模块中声明即可使用-->
+        <pluginManagement>
+            <!--spring生成可执行jar包的插件，注意不要同时org.apache.maven.plugins使用-->
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>

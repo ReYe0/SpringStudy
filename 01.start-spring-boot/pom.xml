@@ -6,11 +6,25 @@
         <artifactId>SpringStudy</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
+<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <!-- 当前模块基本信息-->
     <artifactId>start-spring-boot</artifactId>
+    <!-- 模块打包方式-->
+<!--    <packaging>jar</packaging>-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
