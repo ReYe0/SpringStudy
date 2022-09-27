@@ -22,7 +22,7 @@ public class LogAspect {
     @Autowired
     private SysLogDao sysLogDao;
 
-    @Pointcut("@annotation(com.springboot.annotation.Log)")
+    @Pointcut("@annotation(com.study.annotation.Log)")
     public void pointcut() {
     }
 
