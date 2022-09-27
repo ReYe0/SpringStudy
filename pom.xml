@@ -25,6 +25,8 @@
         <module>_01.start-spring-boot</module>
         <module>_02.spring-boot-config</module>
         <module>_03.spring-boot-mybatis</module>
+        <module>_04.spring-boot-jdbctemplate</module>
+        <module>_05.spring-boot-mybatis-multidatasource</module>
     </modules>
 
     <properties>
@@ -34,6 +36,9 @@
         <bootWeb.version>2.7.0</bootWeb.version>
         <bootTest.version>2.7.0</bootTest.version>
         <lombok.version>1.18.22</lombok.version>
+        <mysql.version>8.0.28</mysql.version>
+        <druid.version>1.2.6</druid.version>
+        <spring.jdbc.version>2.7.0</spring.jdbc.version>
     </properties>
     <!--
 dependencyManagement标签作用：
@@ -49,7 +54,24 @@ dependencies标签的使用：
 -->
     <dependencyManagement>
         <dependencies>
-
+<!--            配置数据库访问之类的-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>${spring.jdbc.version}</version>
+            </dependency>
+            <!--            数据源-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--            数据库驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
