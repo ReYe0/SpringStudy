@@ -17,11 +17,9 @@ public class TestJsonController {
     @RequestMapping("/getuser")
     @ResponseBody
     public User getUser() {
-        System.out.println("22222222222222");
         User user = new User();
         user.setUserName("mrbird");
         user.setBirthday(new Date());
-        System.out.println("33333333333333333");
         return user;
     }
 }

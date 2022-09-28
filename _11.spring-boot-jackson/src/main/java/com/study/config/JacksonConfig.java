@@ -11,7 +11,6 @@ public class JacksonConfig {
     public ObjectMapper getObjectMapper(){
         ObjectMapper mapper = new ObjectMapper();
         mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
-        System.out.println("111111111111111");
         return mapper;
     }
 }
