@@ -31,6 +31,7 @@
         <module>_08.spring-boot-thymeleaf</module>
         <module>_11.spring-boot-jackson</module>
         <module>_12.spring-boot-testing</module>
+        <module>_13.spring-boot-swagger</module>
     </modules>
 
     <properties>
