@@ -7,17 +7,20 @@ import com.study.utils.HttpContextUtils;
 import com.study.utils.IPUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Date;
 
-@Repository
+@Aspect
+@Component
 public class LogAspect {
     @Autowired
     private SysLogDao sysLogDao;

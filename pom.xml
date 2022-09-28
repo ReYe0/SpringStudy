@@ -28,6 +28,8 @@
         <module>_04.spring-boot-jdbctemplate</module>
         <module>_05.spring-boot-mybatis-multidatasource</module>
         <module>_07.spring-boot-aop-log</module>
+        <module>_08.spring-boot-thymeleaf</module>
+        <module>_11.spring-boot-jackson</module>
     </modules>
 
     <properties>
