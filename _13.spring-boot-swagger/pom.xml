@@ -19,16 +19,16 @@
             <scope>provided</scope>
         </dependency>
         <!-- 解决maven引入swagger依赖产生的版本问题，以下二个包要在Swagger2包之上，即1.5.20版本的需要被1.5.21覆盖 -->
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>1.5.21</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-models</artifactId>
-            <version>1.5.21</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <artifactId>swagger-annotations</artifactId>-->
+<!--            <version>1.5.21</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <artifactId>swagger-models</artifactId>-->
+<!--            <version>1.5.21</version>-->
+<!--        </dependency>-->
         <!-- 引入Swagger2的支持 -->
         <dependency>
             <groupId>io.springfox</groupId>

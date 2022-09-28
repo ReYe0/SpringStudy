@@ -32,6 +32,7 @@
         <module>_11.spring-boot-jackson</module>
         <module>_12.spring-boot-testing</module>
         <module>_13.spring-boot-swagger</module>
+        <module>_14.spring-boot-actuator</module>
     </modules>
 
     <properties>
