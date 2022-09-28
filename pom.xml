@@ -30,6 +30,7 @@
         <module>_07.spring-boot-aop-log</module>
         <module>_08.spring-boot-thymeleaf</module>
         <module>_11.spring-boot-jackson</module>
+        <module>_12.spring-boot-testing</module>
     </modules>
 
     <properties>

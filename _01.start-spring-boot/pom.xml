@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <!-- 当前模块基本信息-->
-    <artifactId>start-spring-boot</artifactId>
+    <artifactId>_01.start-spring-boot</artifactId>
     <!-- 模块打包方式-->
 <!--    <packaging>jar</packaging>-->
     <dependencies>
