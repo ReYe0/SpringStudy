@@ -1,0 +1,41 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    ## 注册服务名
+    name: admin-client
+  ## spring boot admin
+#  boot:
+#    admin:
+#      url: http://localhost:8080
+  boot:
+    admin:
+      client:
+#        api-path:
+        url: http://localhost:8888
+        instance:
+          service-url: http://127.0.0.1:9999 #当前系统地址
+#          prefer-ip: true # 使用ip注册进来
+
+
+#  endpoints config
+management:
+  security:
+    enabled: false
+#  endpoint:
+#    health:
+#      show-details: always
+  endpoints:
+#    enabled-by-default: true
+    web:
+      base-path: /actuator
+      exposure:
+        include: '*'
+
+info:
+  app:
+    name: "@project.name@"
+    description: "@project.description@"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"

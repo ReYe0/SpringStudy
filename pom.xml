@@ -34,6 +34,8 @@
         <module>_13.spring-boot-swagger</module>
         <module>_14.spring-boot-actuator</module>
         <module>_15.spring-boot-email</module>
+        <module>_16.spring-boot-admin/spring-boot-admin-client</module>
+        <module>_16.spring-boot-admin/spring-boot-admin-server</module>
     </modules>
 
     <properties>

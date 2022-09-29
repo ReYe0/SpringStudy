@@ -1,0 +1,32 @@
+server:
+  port: 8888
+#  servlet:
+#    context-path: /admin-server
+
+spring:
+  application:
+    name: admin-server
+  mail:
+    host: smtp.qq.com
+    username: 1299461580@qq.com
+    password: gfwhbdocanmzbaag
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: 1299461580@qq.com
+          to: 2379994972@qq.com
+
+
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
