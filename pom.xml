@@ -37,6 +37,7 @@
         <module>_16.spring-boot-admin/spring-boot-admin-client</module>
         <module>_16.spring-boot-admin/spring-boot-admin-server</module>
         <module>_17.spring-boot-devtools</module>
+        <module>_18.spring-boot-logback</module>
     </modules>
 
     <properties>
