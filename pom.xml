@@ -40,6 +40,7 @@
         <module>_17.spring-boot-devtools</module>
         <module>_18.spring-boot-logback</module>
         <module>_19.spring-boot-jsoup</module>
+        <module>_20.spring-boot-exception</module>
     </modules>
 
     <properties>
