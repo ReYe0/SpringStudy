@@ -36,6 +36,7 @@
         <module>_15.spring-boot-email</module>
         <module>_16.spring-boot-admin/spring-boot-admin-client</module>
         <module>_16.spring-boot-admin/spring-boot-admin-server</module>
+        <module>_17.spring-boot-devtools</module>
     </modules>
 
     <properties>
