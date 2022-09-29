@@ -1,0 +1,17 @@
+2022-09-29 14:45:07.290 [main] INFO  com.study.LogBackApplication - Starting LogBackApplication using Java 1.8.0_144 on LAPTOP-VDJGDJN3 with PID 112172 (D:\work_space_ideac\SpringStudy\_18.spring-boot-logback\target\classes started by yxu12 in D:\work_space_ideac\SpringStudy)
+2022-09-29 14:45:07.296 [main] INFO  com.study.LogBackApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-29 14:45:08.586 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-29 14:45:08.596 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-29 14:45:08.597 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-29 14:45:08.602 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-09-29 14:45:08.738 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-29 14:45:08.739 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1373 ms
+2022-09-29 14:45:09.087 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-29 14:45:09.105 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-29 14:45:09.113 [main] INFO  com.study.LogBackApplication - Started LogBackApplication in 2.313 seconds (JVM running for 2.698)
+2022-09-29 14:45:11.494 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-29 14:45:11.495 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-29 14:45:11.496 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-29 14:45:11.572 [http-nio-8080-exec-1] INFO  LogController - An INFO Message
+2022-09-29 14:45:11.572 [http-nio-8080-exec-1] WARN  LogController - A WARN Message
+2022-09-29 14:45:11.573 [http-nio-8080-exec-1] ERROR LogController - An ERROR Message
