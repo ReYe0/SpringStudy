@@ -55,7 +55,7 @@
         <bootTest.version>2.7.0</bootTest.version>
         <lombok.version>1.18.22</lombok.version>
         <mysql.version>8.0.28</mysql.version>
-        <druid.version>1.2.6</druid.version>
+        <druid.version>1.2.5</druid.version>
         <spring.jdbc.version>2.7.0</spring.jdbc.version>
     </properties>
     <!--
