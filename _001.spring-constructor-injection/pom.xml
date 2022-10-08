@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>_23.spring-boot-autoconfig</artifactId>
+    <artifactId>_001.spring-constructor-injection</artifactId>
 
     <dependencies>
         <dependency>

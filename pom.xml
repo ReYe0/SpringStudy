@@ -22,6 +22,7 @@
     <description>父工程顶层依赖</description>
 
     <modules>
+        <module>_001.spring-constructor-injection</module>
         <module>_01.start-spring-boot</module>
         <module>_02.spring-boot-config</module>
         <module>_03.spring-boot-mybatis</module>
@@ -43,7 +44,6 @@
         <module>_20.spring-boot-exception</module>
         <module>_21.spring-boot-filter</module>
         <module>_22.spring-boot-mapper-pagehelper</module>
-        <module>_23.spring-constructor-injection</module>
     </modules>
 
     <properties>
