@@ -1,5 +1,6 @@
-package com.study.main;
+package com.study._001.main;
 
+import com.study._001.bean.Stage;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -7,14 +8,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Description: SpringStudy
  * @Author: 二爷
  * @E-mail: 1299461580@qq.com
- * @Date: 2022/10/6 16:05
+ * @Date: 2022/10/6 16:02
  */
-public class LightControl {
+public class CreateStage {
     public static void main(String[] args) {
         String conf="applicationContext.xml";
-        //加载容器
         ApplicationContext ac=new ClassPathXmlApplicationContext(conf);
-        //关闭容器
-        ((ClassPathXmlApplicationContext)ac).close();
+        Stage stage=(Stage)ac.getBean("stage");
+        stage.createStage();
     }
 }

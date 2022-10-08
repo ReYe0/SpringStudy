@@ -44,6 +44,7 @@
         <module>_20.spring-boot-exception</module>
         <module>_21.spring-boot-filter</module>
         <module>_22.spring-boot-mapper-pagehelper</module>
+        <module>_002.spring-setter-injection</module>
     </modules>
 
     <properties>

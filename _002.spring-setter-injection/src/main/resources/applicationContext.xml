@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Bean declarations go here -->
+
+    <bean id="kenny" class="com.study._002.entity.Instrumentalist">
+        <property name="song" value="May Rain"/>
+        <property name="instrument" ref="piano"/>
+    </bean>
+
+    <bean id="piano" class="com.study._002.entity.Piano"/>
+
+
+
+</beans>

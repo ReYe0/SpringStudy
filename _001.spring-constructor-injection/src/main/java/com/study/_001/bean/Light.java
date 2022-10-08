@@ -1,4 +1,4 @@
-package com.study.bean;
+package com.study._001.bean;
 
 /**
  * @Description: SpringStudy

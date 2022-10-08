@@ -7,20 +7,21 @@
     <!--Bean declarations go here -->
 
 <!--    <bean id="duke" class="com.study.bean.Juggler" c:beanBags="15">-->
-    <bean id="duke" class="com.study.bean.Juggler" c:_0="15">
+    <bean id="duke" class="com.study._001.bean.Juggler" c:_0="15">
 <!--        <constructor-arg value="15" />-->
     </bean>
-    <bean id="deceivedByLife" class="com.study.bean.DeceivedByLife"/>
-    <bean id="poeticDuke" class="com.study.bean.PoeticJuggler">
+    <bean id="deceivedByLife" class="com.study._001.bean.DeceivedByLife"/>
+
+    <bean id="poeticDuke" class="com.study._001.bean.PoeticJuggler">
         <constructor-arg value="15"/>
         <constructor-arg ref="deceivedByLife"/>
     </bean>
 
-    <bean id="stage" class="com.study.bean.Stage" factory-method="getInstance"/>
+    <bean id="stage" class="com.study._001.bean.Stage" factory-method="getInstance"/>
 
 <!--    <bean id="ticket" class="com.study.bean.Ticket" scope="prototype"/>-->
 
-    <bean id="light" class="com.study.bean.Light"
+    <bean id="light" class="com.study._001.bean.Light"
           init-method="turnOnTheLight" destroy-method="turnOffTheLight"/>
 
 

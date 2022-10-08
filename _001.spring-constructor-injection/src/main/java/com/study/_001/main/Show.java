@@ -1,6 +1,6 @@
-package com.study.main;
+package com.study._001.main;
 
-import com.study.bean.Juggler;
+import com.study._001.bean.Juggler;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,7 +14,8 @@ public class Show {
     public static void main(String[] args) {
         String conf="applicationContext.xml";
         ApplicationContext ac=new ClassPathXmlApplicationContext(conf);
-        Juggler duke=(Juggler)ac.getBean("poeticDuke");
+        Juggler duke=(Juggler)ac.getBean("duke");
+//        Juggler duke=(Juggler)ac.getBean("poeticDuke");
         duke.perform(); //扔了 3 个豆袋子
     }
 }

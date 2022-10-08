@@ -1,6 +1,6 @@
-package com.study.bean;
+package com.study._001.bean;
 
-import com.study.inter.Performer;
+import com.study._001.inter.Performer;
 
 /**
  * @Description: SpringStudy
