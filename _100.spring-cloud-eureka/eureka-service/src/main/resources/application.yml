@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: Eureka-Server
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: mrbird
+    password: 123456
